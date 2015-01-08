@@ -15,7 +15,6 @@ Pod::Spec.new do |s|
 
   s.author       = { "David Kasper" => "dkasper@gmail.com" }
 
-  s.platform     = :ios
   s.platform     = :ios, '7.0'
 
   s.source       = { :git => "https://github.com/dkasper/DKCountryPicker.git", :tag => "0.0.2" }
