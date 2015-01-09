@@ -61,7 +61,7 @@
 -(void)setup {
     searchData = [[NSMutableArray alloc] init];
     countryDictionary = [[NSMutableDictionary alloc] init];
-    NSLocale *locale = [NSLocale currentLocale];
+    NSLocale *locale = [NSLocale systemLocale];
     NBPhoneNumberUtil *util = [NBPhoneNumberUtil sharedInstance];
     
     for(NSString *countryCode in [NSLocale ISOCountryCodes]) {
