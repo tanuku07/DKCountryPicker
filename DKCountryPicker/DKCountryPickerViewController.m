@@ -273,7 +273,7 @@ NSArray *dictionary = @[@"AD", @"AE", @"AF" ,@"AG"
         __Country *newCountry = [[__Country alloc] init];
         newCountry.countryCode = countryCode;
         newCountry.name = [locale displayNameForKey:NSLocaleCountryCode value:countryCode];
-        newCountry.phoneCode = [util countryCodeFromRegionCode:countryCode];
+        newCountry.phoneCode = (id) [util getCountryCodeForRegion:countryCode];
         
         //code can be null
         if(!newCountry.phoneCode) {
